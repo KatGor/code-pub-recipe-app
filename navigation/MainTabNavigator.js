@@ -19,14 +19,14 @@ const HomeStack = createStackNavigator(
 );
 
 HomeStack.navigationOptions = {
-  tabBarLabel: 'Recipes',
+  tabBarLabel: 'Search',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
       name={
         Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
-          : 'md-information-circle'
+          ? 'ios-search'
+          : 'md-search'
       }
     />
   ),
@@ -42,9 +42,9 @@ const LikedRecipesStack = createStackNavigator(
 );
 
 LikedRecipesStack.navigationOptions = {
-  tabBarLabel: 'Links',
+  tabBarLabel: 'Recipe Book',
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'} />
+    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-heart-empty' : 'md-heart-empty'} />
   ),
 };
 
