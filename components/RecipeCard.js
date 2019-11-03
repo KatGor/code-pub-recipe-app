@@ -1,16 +1,18 @@
 import React from 'react';
-import {StyleSheet, Dimensions, Image, View, Text} from "react-native";
+import {
+  StyleSheet, Dimensions, Image, View, Text,
+} from 'react-native';
 
-const {height, width} = Dimensions.get('window');
+const { height, width } = Dimensions.get('window');
 
-export default function RecipeCard({pic, title}) {
+export default function RecipeCard({ pic, title }) {
   return (
     <View style={styles.container}>
-      <Image source={{uri: pic}} style={styles.imageContainer} />
+      <Image source={{ uri: pic }} style={styles.imageContainer} />
       <Text style={styles.title}>{title}</Text>
     </View>
-  )
-};
+  );
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -27,8 +29,8 @@ const styles = StyleSheet.create({
     position: 'absolute',
     left: 10,
     bottom: 30,
-    backgroundColor: "white",
-    width: width - 30
+    backgroundColor: 'white',
+    width: width - 30,
   },
   caption: {
     position: 'absolute',

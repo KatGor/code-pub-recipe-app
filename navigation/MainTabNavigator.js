@@ -15,7 +15,7 @@ const HomeStack = createStackNavigator(
   {
     Home: HomeScreen,
   },
-  config
+  config,
 );
 
 HomeStack.navigationOptions = {
@@ -36,9 +36,9 @@ HomeStack.path = '';
 
 const LikedRecipesStack = createStackNavigator(
   {
-    LikedRecipes: LikedRecipes,
+    LikedRecipes,
   },
-  config
+  config,
 );
 
 LikedRecipesStack.navigationOptions = {
@@ -52,7 +52,7 @@ LikedRecipesStack.path = '';
 
 const tabNavigator = createBottomTabNavigator({
   HomeStack,
-  LikedRecipesStack
+  LikedRecipesStack,
 });
 
 tabNavigator.path = '';

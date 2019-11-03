@@ -1,15 +1,13 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   StyleSheet,
   View,
 } from 'react-native';
 import axios from 'axios';
-import Swiper from 'react-native-deck-swiper'
+import Swiper from 'react-native-deck-swiper';
 import RecipeCard from '../components/RecipeCard';
 
-const fetchRecipes = async () => {
-  return axios.get('https://api.edamam.com/search?q=breakfast&app_id=e34438de&app_key=084c9e3bb17fbcad9dc37e0422aa0069')
-};
+const fetchRecipes = async () => axios.get('https://api.edamam.com/search?q=breakfast&app_id=e34438de&app_key=084c9e3bb17fbcad9dc37e0422aa0069');
 
 export default function HomeScreen() {
   const [recipes, setRecipes] = useState([]);
@@ -44,5 +42,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-  }
+  },
 });
