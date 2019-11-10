@@ -10,7 +10,6 @@ export default function LikedRecipes() {
       <FlatList
         keyExtractor={(item) => item.uri}
         data={likedRecipes}
-        renderItem={({ item }) => <LikedRecipeCard recipe={item} />}
       />
     </ScrollView>
   );
