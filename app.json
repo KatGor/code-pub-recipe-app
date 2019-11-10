@@ -26,6 +26,7 @@
     "ios": {
       "supportsTablet": true
     },
-    "description": "Example app for The Code Pub"
+    "description": "Example app for The Code Pub",
+    "githubUrl": "https://github.com/KatGor/code-pub-recipe-app"
   }
 }
